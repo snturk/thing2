@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="mainContainer">
     <nav>
       <div id="mainTitle">thing</div>
       <div id="navBarContainer">
@@ -31,6 +31,14 @@ html, body {
   100%{background:  #000024;}
 }
 
+#mainContainer{
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .container{
   height: 90vh;
   margin: 0 auto;
@@ -38,7 +46,7 @@ html, body {
 
 nav{
   background: linear-gradient(90deg, rgba(0,0,77,1) 0%, rgba(0,0,92,1) 28%, rgba(0,0,100,1) 100%);
-  color: white;
+  color: rgba(255, 255, 255, 0.877);
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -51,25 +59,33 @@ nav{
 }
 
 #mainTitle{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 40px;
   letter-spacing: 4px;
-  margin-left: 1.5%;
+  margin-left: 2%;
 }
 
 #navBarContainer{
-  min-width: 20%;
+  width: max(30%, 250px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-weight: 300;
-  margin-right: 1.5%;
+  font-weight: 400;
+  margin-right: 2%;
 }
 
 .navEl{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
