@@ -20,7 +20,15 @@ html, body {
   height: 100vh;
   margin: 0;
   background: #000024;
+  animation-name: background;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
   font-family: 'Raleway', sans-serif;
+}
+@keyframes background {
+  0%{background:  #000024;}
+  50%{background:  #000030;}
+  100%{background:  #000024;}
 }
 
 .container{
