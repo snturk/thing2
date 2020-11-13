@@ -17,7 +17,6 @@ export default {}
 }
 
 #homeTitle{
-  width: 50%;
   text-align: center;
   display: flex;
   margin: auto;
@@ -29,5 +28,11 @@ export default {}
 
 #homeTitle span{
   font-weight: 100;
+}
+
+@media screen and (max-width: 768px){
+  #homeTitle{
+    font-size: 32px;
+  }
 }
 </style>
