@@ -19,8 +19,16 @@ html, body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background: #000024;
+  background: linear-gradient(90deg, #000050 0%, #000030 48%,  #000022 100%);
+  background-size: 300%;
+  background-position: 100% 0%;
+  animation: bgFade ease 8s;
   font-family: 'Raleway', sans-serif;
+}
+
+@keyframes bgFade {
+  from{background-position: 0% 0%;}
+  to{background-position: 100% 0%;}
 }
 
 #__nuxt, #__layout{
@@ -88,8 +96,8 @@ nav{
 
 @media screen and (max-width: 768px) {
   nav{
+    height: 15%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -98,6 +106,7 @@ nav{
   }
 
   #navBarContainer{
+    width: 90%;
     margin-right: unset;
   }
 }

@@ -24,10 +24,22 @@ export default {}
   font-size: 64px;
   font-weight: bold;
   color: white;
+  animation: fadeInOpening ease 1.7s;
+}
+
+@keyframes fadeInOpening {
+  from{opacity: 0;}
+  to{opacity: 1;}
 }
 
 #homeTitle span{
   font-weight: 100;
+  background: -webkit-linear-gradient(#eee, rgb(22, 9, 138));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-size: 200%;
+  background-position: 0% 30%;
+  animation: fadeInOpening ease 5s;
 }
 
 @media screen and (max-width: 768px){
