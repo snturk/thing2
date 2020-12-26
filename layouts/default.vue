@@ -16,14 +16,13 @@
 html, body {
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   background: linear-gradient(90deg, #000050 0%, #000030 48%,  #000022 100%);
   background-size: 300%;
   background-position: 100% 0%;
   animation: bgFade ease 8s;
   font-family: 'Raleway', sans-serif;
+  font-weight: 200;
 }
 
 @keyframes bgFade {
@@ -45,15 +44,14 @@ html, body {
 }
 
 .container{
-  height: 90%;
   margin: 0;
 }
 
 nav{
-  background: linear-gradient(90deg, rgba(0,0,77,1) 0%, rgba(0,0,92,1) 28%, rgba(0,0,100,1) 100%);
+  border-bottom: 1px solid #eee;
   color: rgba(255, 255, 255, 0.877);
-  width: 100%;
-  height: 9%;
+  width: 95%;
+  height: 10vh;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -89,7 +87,7 @@ nav{
   transition-duration: 300ms;
 }
 .navEl:hover{
-  background:  rgb(170, 170, 252);
+  background:  #eee;
   color: #000024;
   cursor: pointer;
 }
