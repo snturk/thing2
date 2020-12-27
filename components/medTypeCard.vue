@@ -2,7 +2,7 @@
   <div class="homeCard" id="medTypeCard">
       <div class="homeCardTitle">Meditation Types</div>
       <div id="medTypeContainer">
-        <div class="medType" id="typeDesert">
+        <div @click="goToMed(1)" class="medType" id="typeDesert">
           <div class="medTitle">Desert</div>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#eeeeee" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -11,7 +11,7 @@
           </svg>
           <div class="medDesc">Long breath, then breath out.</div>
         </div>
-        <div class="medType" id="typeTundra">
+        <div v-on:click="goToMed(2)" class="medType" id="typeTundra">
           <div class="medTitle">Tundra</div>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#eeeeee" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -19,7 +19,7 @@
           </svg>
           <div class="medDesc">Completely balanced.</div>
         </div>
-        <div class="medType" id="typeTropic">
+        <div @click="goToMed(3)" class="medType" id="typeTropic">
           <div class="medTitle">Tropic</div>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-leaf" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#eeeeee" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -34,7 +34,16 @@
 
 <script>
 export default {
-
+  data(){
+    return{
+    }
+  },
+  methods:{
+    async goToMed(type){
+      this.$store.state.meditationType = type
+      this.$router.push('/meditation')
+    }
+  }
 }
 </script>
 
@@ -64,9 +73,18 @@ export default {
   justify-content: space-around;
   align-items: center;
   background: linear-gradient(90deg, #000040 0%, #000030 48%,  #000022 100%);
+  box-shadow: 2px 1px 7px hsla(0, 0%, 27%, 0.781);
   color: #eee;
   padding: 5px;
   border-radius: 7px;
+  cursor: pointer;
+  transition-duration: 300ms;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.medType:hover{
+  width: 55%;
+  filter: brightness(140%);
 }
 
 .medTitle{
