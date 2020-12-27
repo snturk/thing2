@@ -17,7 +17,7 @@ html, body {
   top: 0;
   left: 0;
   margin: 0;
-  background: linear-gradient(90deg, #000050 0%, #000030 48%,  #000022 100%);
+  background: linear-gradient(90deg, #000050 0%, #000040 58%,  #000032 100%);
   background-size: 300%;
   background-position: 100% 0%;
   animation: bgFade ease 8s;
