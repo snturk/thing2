@@ -62,7 +62,7 @@ nav{
 #mainTitle{
   font-weight: 200;
   font-size: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   margin-left: 2%;
 }
 
