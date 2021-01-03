@@ -106,4 +106,21 @@ export default {
 #typeTropic{
   background: linear-gradient(90deg,hsl(152, 66%, 29%) 0%, hsl(152, 66%, 33%) 47%,  hsl(152, 66%, 35%) 100%);
 }
+
+@media screen and (max-width: 768px){
+  #medTypeContainer{
+    flex-direction: column;
+    height: 82%;
+  }
+
+  .medType{
+    width: 80%;
+    height: 70%;
+    margin-top: 2%;
+  }
+  .medType:hover{
+    width: 80%;
+    filter: unset;
+  }
+}
 </style>

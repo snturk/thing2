@@ -37,4 +37,21 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-background-size: 200%;
 }
+
+@media screen and (max-width: 768px){
+  #appDescCard{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #appDescCard img{
+    width: 80%;
+    filter: drop-shadow(0 0 5px rgba(94, 81, 218, 0.644));
+  }
+
+  #appDescCard p{
+    text-align: center;
+  }
+}
 </style>

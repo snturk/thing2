@@ -30,9 +30,9 @@ export default {
   height: 80vh;
   text-align: center;
   display: flex;
-  margin: 0 auto;
   flex-direction: row;
   align-items: center;
+  margin: 0 auto;
   font-size: 64px;
   font-weight: bold;
   color: white;
@@ -78,6 +78,21 @@ export default {
 @media screen and (max-width: 768px){
   #homeTitle{
     font-size: 32px;
+    height: 45vh;
+    justify-content: center;
+  }
+
+  .homeCard{
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeCardTitle{
+    font-size: xx-large;
+    margin-bottom: 7%;
   }
 }
 </style>
